@@ -18,7 +18,7 @@ namespace :db do
       title = Faker::Lorem.sentence(9)
       description = %{<p>#{Faker::Lorem.paragraph}</p>}
       image_url = "image#{n+1}.jpg"
-      price = rand(0.01..99999999).round(2)
+      price = rand(0.01..999).round(2)
       Product.create!(:title => title,
       :description =>description,
       :image_url =>image_url,    

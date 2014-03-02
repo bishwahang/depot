@@ -17,6 +17,9 @@
     </div>
     <div id="columns">
       <div id="side">
+        <div id="cart" >
+        <%= render @cart unless @cart.nil? %>
+        </div>
         <%= link_to 'Home', store_path %><br />
         <%= link_to 'My Cart', carts_path %><br />
         <%= link_to 'Github' , 'https://github.com/bishwahang/depot' %><br />
